@@ -56,11 +56,11 @@ static int ataqueJogador1() {
     escolhaAtaque = ataqueJogador1();
     switch (escolhaAtaque) {
     case 1: {
-        System.out.println("Jogador 1 aplicou um ataque X.");
+        System.out.println("Jogador 1 aplicou o ataque Water Gun.");
         hpJogador2 -= 10;
            }
     case 2: {
-        System.out.println("Jogador 1 aplicou um ataque Y.");
+        System.out.println("Jogador 1 aplicou um ataque Hydro Pump.");
         hpJogador2 -= 30;
        }
     default: System.out.println("Opcao invalida");
@@ -69,15 +69,15 @@ static int ataqueJogador1() {
      escolhaAtaque = ataqueJogador2();
      switch (escolhaAtaque) {
      case 1: {
-         System.out.println("Jogador 2 aplicou um ataque X.");
+         System.out.println("Jogador 2 aplicou um ataque Ember.");
          hpJogador1 -= 15;
             }
      case 2: {
-         System.out.println("Jogador 2 aplicou um ataque Y.");
+         System.out.println("Jogador 2 aplicou um ataque 	Fire Blast.");
          hpJogador1 -= 10;
             }
      case 3: {
-         System.out.println("Jogador 2 aplicou um ataque W.");
+         System.out.println("Jogador 2 aplicou um ataque  Flamethrower.");
          hpJogador1 -= 32;
             }
      }
