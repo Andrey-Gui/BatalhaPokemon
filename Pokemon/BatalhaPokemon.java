@@ -55,40 +55,73 @@ static int ataqueJogador1() {
     imprimeHP(hpJogador1, hpJogador2);
     escolhaAtaque = ataqueJogador1();
     switch (escolhaAtaque) {
-    case 1: {
+  case 1: {
         System.out.println("Jogador 1 aplicou o ataque Water Gun.");
         hpJogador2 -= 10;
            }
-    case 2: {
+  case 2: {
         System.out.println("Jogador 1 aplicou um ataque Hydro Pump.");
         hpJogador2 -= 30;
        }
     default: System.out.println("Opcao invalida");
+  case 3:{
+      System.out.println("Jogador 1 aplicou um ataque z.");
+      hpJogador2 -= 30;
+      break;
+         }
+  case 4:{
+      System.out.println("Jogador 1 aplicou um ataque a.");
+      hpJogador2 -= 40;
+      break;
+         }
+  case 5:{
+      System.out.println("Jogador 1 aplicou um ataque b.");
+      hpJogador2 -= 50;
+      break;
+         }
+  case 6:{
+      System.out.println("Jogador 1 aplicou um ataque c.");
+      hpJogador2 -= 60;
+      break;
+         }     
     }
     if (hpJogador2 > 0) {
      escolhaAtaque = ataqueJogador2();
      switch (escolhaAtaque) {
-     case 1: {
+     case 1:{
          System.out.println("Jogador 2 aplicou um ataque Ember.");
          hpJogador1 -= 15;
             }
-     case 2: {
+     case 2:{
          System.out.println("Jogador 2 aplicou um ataque 	Fire Blast.");
          hpJogador1 -= 10;
             }
-     case 3: {
+     case 3:{
          System.out.println("Jogador 2 aplicou um ataque  Flamethrower.");
          hpJogador1 -= 32;
-            }
+           }
+    case 4:{
+         System.out.println("Jogador 1 aplicou um ataque a.");
+         hpJogador2 -= 40;
+         break;
+           }
+    case 5:{
+        System.out.println("Jogador 1 aplicou um ataque b.");
+        hpJogador2 -= 50;
+        break;
+           }
+    case 6:{
+        System.out.println("Jogador 1 aplicou um ataque c.");
+        hpJogador2 -= 60;
+        break;
+       }     
      }
     } else {
      System.out.println("Jogador 2 derrotado");
     } 
    }
   }
- 
-
- }
+}
 
  public static void main(String[] args) {
   int continua = 1;
