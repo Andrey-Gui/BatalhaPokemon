@@ -1,2 +1,0 @@
-# BatalhaPokemon
- PokeGame
