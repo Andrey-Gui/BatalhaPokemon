@@ -95,6 +95,7 @@ static int ataqueJogador1() {
       hpJogador2 -= 60;
       break;
          }     
+  default: System.out.println("Opcao invalida");
     }
     if (hpJogador2 > 0) {
      escolhaAtaque = ataqueJogador2();
@@ -128,7 +129,8 @@ static int ataqueJogador1() {
         System.out.println("Jogador 2 aplicou um ataque  Ilusion.");
         hpJogador2 -= 60;
         break;
-       }     
+       }
+    default: System.out.println("Opcao invalida");     
      }
     } else {
      System.out.println("Jogador 2 derrotado");
